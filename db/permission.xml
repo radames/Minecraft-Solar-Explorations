@@ -27,4 +27,25 @@
     <type>group</type>
     <value>true</value>
   </entry>
+  <entry>
+    <id>4</id>
+    <owner>visitors</owner>
+    <path>canary.command.warp.*</path>
+    <type>group</type>
+    <value>true</value>
+  </entry>
+  <entry>
+    <id>5</id>
+    <owner>visitors</owner>
+    <path>canary.command.weather.*</path>
+    <type>group</type>
+    <value>true</value>
+  </entry>
+  <entry>
+    <id>6</id>
+    <owner>visitors</owner>
+    <path>canary.command.time.*</path>
+    <type>group</type>
+    <value>true</value>
+  </entry>
 </permission>
