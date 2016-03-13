@@ -1,0 +1,80 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 3/12/16 9:49 AM
+Description: Exception ticking world
+
+java.lang.IllegalArgumentException: n must be positive
+	at java.util.Random.nextInt(Random.java:250)
+	at net.minecraft.world.biome.BiomeDecorator.a(BiomeDecorator.java:190)
+	at net.minecraft.world.biome.BiomeDecorator.a(BiomeDecorator.java:114)
+	at net.minecraft.world.biome.BiomeGenBase.a(BiomeGenBase.java:278)
+	at net.minecraft.world.gen.ChunkProviderGenerate.a(ChunkProviderGenerate.java:401)
+	at net.minecraft.world.gen.ChunkProviderServer.a(ChunkProviderServer.java:233)
+	at net.minecraft.world.chunk.Chunk.a(Chunk.java:893)
+	at net.minecraft.world.gen.ChunkProviderServer.c(ChunkProviderServer.java:163)
+	at net.minecraft.world.gen.ChunkProviderServer.d(ChunkProviderServer.java:172)
+	at net.minecraft.world.World.a(World.java:261)
+	at net.minecraft.world.SpawnerAnimals.a(SpawnerAnimals.java:172)
+	at net.minecraft.world.SpawnerAnimals.a(SpawnerAnimals.java:88)
+	at net.minecraft.world.WorldServer.c(WorldServer.java:174)
+	at net.minecraft.server.MinecraftServer.z(MinecraftServer.java:671)
+	at net.minecraft.server.dedicated.DedicatedServer.z(DedicatedServer.java:446)
+	at net.minecraft.server.MinecraftServer.y(MinecraftServer.java:589)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:491)
+	at java.lang.Thread.run(Thread.java:695)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.util.Random.nextInt(Random.java:250)
+	at net.minecraft.world.biome.BiomeDecorator.a(BiomeDecorator.java:190)
+	at net.minecraft.world.biome.BiomeDecorator.a(BiomeDecorator.java:114)
+	at net.minecraft.world.biome.BiomeGenBase.a(BiomeGenBase.java:278)
+	at net.minecraft.world.gen.ChunkProviderGenerate.a(ChunkProviderGenerate.java:401)
+	at net.minecraft.world.gen.ChunkProviderServer.a(ChunkProviderServer.java:233)
+	at net.minecraft.world.chunk.Chunk.a(Chunk.java:893)
+	at net.minecraft.world.gen.ChunkProviderServer.c(ChunkProviderServer.java:163)
+	at net.minecraft.world.gen.ChunkProviderServer.d(ChunkProviderServer.java:172)
+	at net.minecraft.world.World.a(World.java:261)
+	at net.minecraft.world.SpawnerAnimals.a(SpawnerAnimals.java:172)
+	at net.minecraft.world.SpawnerAnimals.a(SpawnerAnimals.java:88)
+	at net.minecraft.world.WorldServer.c(WorldServer.java:174)
+
+-- Affected level --
+Details:
+	Level name: molecule
+	All players: 1 total; [EntityPlayerMP['cheapjack3000'/0, l='molecule', x=100.50, y=100.00, z=100.50]]
+	Chunk stats: ServerChunkCache: 465 Drop: 0
+	Level seed: 1137903849285455764
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: 8.00,77.00,7.00 - World: (8,77,7), Chunk: (at 8,4,7 in 0,0; contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 43414668 game time, 124086777 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 5073 (now: false), thunder time: 8175 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.z(MinecraftServer.java:671)
+	at net.minecraft.server.dedicated.DedicatedServer.z(DedicatedServer.java:446)
+	at net.minecraft.server.MinecraftServer.y(MinecraftServer.java:589)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:491)
+	at java.lang.Thread.run(Thread.java:695)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8
+	Operating System: Mac OS X (x86_64) version 10.6.8
+	Java Version: 1.6.0_65, Apple Inc.
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Apple Inc.
+	Memory: 91891240 bytes (87 MB) / 227319808 bytes (216 MB) up to 1069416448 bytes (1019 MB)
+	JVM Flags: 1 total; -Xmx1024M
+	IntCache: cache: 1, tcache: 1, allocated: 12, tallocated: 94
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 20; [EntityPlayerMP['cheapjack3000'/0, l='molecule', x=100.50, y=100.00, z=100.50]]
+	Is Modded: Definitely; Server brand changed to 'CanaryMod'
+	Type: Dedicated Server (map_server.txt)

@@ -5,9 +5,9 @@
 
 #### Adding worlds
 
-`/createworld solar superflat NORMAL_FLAT`
+`/createworld solar superflat NORMAL FLAT`
 then when its built:
-`/loadworld solar_NORMAL`
+`/loadworld solar NORMAL`
 
 and teleport in
 

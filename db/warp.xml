@@ -29,4 +29,109 @@
     <rotation>-261.75003</rotation>
     <world>solar</world>
   </entry>
+  <entry>
+    <dimension>NORMAL</dimension>
+    <groups />
+    <id>4</id>
+    <isPlayerHome>false</isPlayerHome>
+    <location>N/A</location>
+    <name>shore</name>
+    <owner>null</owner>
+    <pitch>77.25</pitch>
+    <posX>87.47560001456368</posX>
+    <posY>75.66955274820855</posY>
+    <posZ>99.54385035844358</posZ>
+    <rotation>93.899994</rotation>
+    <world>molecule</world>
+  </entry>
+  <entry>
+    <dimension>NORMAL</dimension>
+    <groups />
+    <id>5</id>
+    <isPlayerHome>false</isPlayerHome>
+    <location>N/A</location>
+    <name>skin</name>
+    <owner>null</owner>
+    <pitch>17.850014</pitch>
+    <posX>202.26065807847598</posX>
+    <posY>100.0</posY>
+    <posZ>65.62855075807661</posZ>
+    <rotation>258.0</rotation>
+    <world>atom</world>
+  </entry>
+  <entry>
+    <dimension>NORMAL</dimension>
+    <groups />
+    <id>7</id>
+    <isPlayerHome>false</isPlayerHome>
+    <location>N/A</location>
+    <name>atom2</name>
+    <owner>null</owner>
+    <pitch>41.550034</pitch>
+    <posX>1021.1014230677979</posX>
+    <posY>121.0</posY>
+    <posZ>-10.025391347367847</posZ>
+    <rotation>128.99875</rotation>
+    <world>solar</world>
+  </entry>
+  <entry>
+    <dimension>NORMAL</dimension>
+    <groups />
+    <id>8</id>
+    <isPlayerHome>false</isPlayerHome>
+    <location>N/A</location>
+    <name>atom1</name>
+    <owner>null</owner>
+    <pitch>23.399921</pitch>
+    <posX>537.7643458423864</posX>
+    <posY>40.0</posY>
+    <posZ>-35.18572374065786</posZ>
+    <rotation>-123.59995</rotation>
+    <world>solar</world>
+  </entry>
+  <entry>
+    <dimension>NORMAL</dimension>
+    <groups />
+    <id>9</id>
+    <isPlayerHome>false</isPlayerHome>
+    <location>N/A</location>
+    <name>Helium</name>
+    <owner>null</owner>
+    <pitch>22.5</pitch>
+    <posX>881.7772474804672</posX>
+    <posY>97.0</posY>
+    <posZ>-115.5665962473201</posZ>
+    <rotation>89.09631</rotation>
+    <world>solar</world>
+  </entry>
+  <entry>
+    <dimension>NORMAL</dimension>
+    <groups />
+    <id>10</id>
+    <isPlayerHome>false</isPlayerHome>
+    <location>N/A</location>
+    <name>cell</name>
+    <owner>null</owner>
+    <pitch>28.050005</pitch>
+    <posX>97.11579651230136</posX>
+    <posY>63.0</posY>
+    <posZ>96.66150639480642</posZ>
+    <rotation>158.39989</rotation>
+    <world>cell</world>
+  </entry>
+  <entry>
+    <dimension>NORMAL</dimension>
+    <groups />
+    <id>11</id>
+    <isPlayerHome>false</isPlayerHome>
+    <location>N/A</location>
+    <name>cellinside</name>
+    <owner>null</owner>
+    <pitch>-16.799974</pitch>
+    <posX>31.860571106326972</posX>
+    <posY>70.0</posY>
+    <posZ>105.20100096514409</posZ>
+    <rotation>3.4490967</rotation>
+    <world>cell</world>
+  </entry>
 </warp>
