@@ -10,6 +10,10 @@ Then use this tool to think about relative sizes and scale
 
 [Scale Of The Universe Tool](http://www.htwins.net/scale2/)
 
+Calculator to make your own Solar System model
+
+[Solar System Model Calculator](http://www.exploratorium.edu/ronh/solar_system/)
+
 ### Workshop activity
 
 Use a local minecraft server to explore scale in Minecraft.
