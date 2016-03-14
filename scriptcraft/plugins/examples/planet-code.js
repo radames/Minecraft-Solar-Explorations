@@ -41,11 +41,58 @@ var Drone = require('drone'),
     utils = require('utils'),
 	slash = require('slash');
 
-command( 'planet', function( parameters, player ) {
+
+var posY = 200; //middle of the sky
+var scaleBlock = 20; // 200 block diameter for the Sun
+var Sun = 1391900
+var distFactor = 100; //make the distances smaller
+var scaleFactor = scaleBlock/Sun;
+
+var planets ={
+  'Mercury':[4866, 57950000, blocks.wool.gray],	
+  'Venus':[12106, 108110000, blocks.wool.white],
+  'Earth':[12742, 149570000, blocks.wool.blue],
+  'Mars':[6760, 227840000, blocks.wool.red],
+  'Jupiter':[142984,778140000, blocks.wool.yellow],
+  'Saturn':[116438, 1427000000, blocks.wool.lightgray],
+  'Uranus':[46940, 2870300000, blocks.wool.lightblue],
+  'Neptune':[45432, 4499900000, blocks.wool.purple],
+  'Pluto':[2274,5913000000, blocks.wool.pink]};
+
+
+command( 'Sun', function( parameters, player ) {
+  
+    var posX = 0;
+    var radius = scaleBlock/2;
+
     var cmLocation = Packages.net.canarymod.api.world.position.Location;
-    var loc =  new cmLocation( player.world, 0, 1000, 0, 0, 0);
+    var loc =  new cmLocation( player.world, posX, posY, 0, 0, 0);
 
 	teleport(player, loc);
+  
+    var d = new Drone(player);
+    d.sphere0(blocks.glowstone, radius);
+});
+
+command( 'planet', function( parameters, player ) {
+  	var planet = parameters[0];
+  	if(planet in planets){
+
+	  var posX = scaleFactor * planets['Mercury'][1]/ distFactor;
+	  var radius = scaleFactor * planets['Mercury'][0];
+
+	  var block = planets['Mercury'][2];
+
+	  var cmLocation = Packages.net.canarymod.api.world.position.Location;
+	  var loc =  new cmLocation( player.world, posX, posY, 0, 0, 0);
+
+	  teleport(player, loc);
+
+	  var d = new Drone(player);
+	  d.sphere0(block, radius);
+	}else{
+	  echo(player,'ERROR valid planets:\nMercury, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto');
+	}
 });
 
 
@@ -55,7 +102,7 @@ command( 'light', function( parameters, player ) {
   
 	slash([
 	  'time set 6000',
-	  'toggledownfall'
+	  'weather clear 1000000'
 	], player);
   
 });
