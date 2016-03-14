@@ -106,6 +106,30 @@ command( 'planet', function( parameters, player ) {
 });
 
 
+command( 'atom', function( parameters, player ) {
+  	var type = parameters[0];
+    var atoms = {'Proton':[7,blocks.iron],
+				 'Neutron':[8,blocks.wool.orange],
+				 'Electron':[5,blocks.wool.blue]
+				}
+  
+  	if(type in atoms){
+
+
+	
+	  teleport(player, player.location);
+
+	  var d = new Drone(player);
+	  d.sphere0(atoms[type][1], atoms[type][0]);
+	  echo(player, 'Creating ' + type);
+
+	}else{
+	  echo(player,'ERROR valid planets:\n Proton, Neutron, Electron');
+	}
+});
+
+
+
 command( 'light', function( parameters, player ) {
 	player.location.world.setTime(1000);
 
