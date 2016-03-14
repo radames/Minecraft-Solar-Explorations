@@ -47,7 +47,7 @@ var posZ = 100;
 
 var scaleBlock = 150; // 200 block diameter for the Sun
 var Sun = 1391900
-var distFactor = 100; //make the distances smaller
+var distFactor = 500; //make the distances smaller
 var scaleFactor = scaleBlock/Sun;
 
 var planets ={
