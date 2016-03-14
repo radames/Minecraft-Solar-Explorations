@@ -18,26 +18,26 @@ Warp to a <warp_name>
 
 #####Solar System
 
-`/jsp planet(<PLANET_NAME>)`
+`/jsp planet <Planet_Name>`
 
 ```
-<PLANET_NAME>
-EARTH
-SUN
-MOON 
-MERCURY
-VENUS 
-MARS
-SATURN
-JUPITER
-NEPTUNE
-PLUTO
+<Planet_Name>
+Earth
+Sun
+Moon
+Mercury
+Venus 
+Mars
+Saturn
+Jupiter
+Neptune
+Pluto
 ```
 #####Atoms
 
-`/jsp atom(PROTON)`
-`/jsp atom(NEUTRON)`
-`/jsp atom(ELECTRON)`
+`/jsp atom Proton`
+`/jsp atom Neutron`
+`/jsp atom Electron`
 
 
 
