@@ -43,9 +43,11 @@ var Drone = require('drone'),
 
 
 var posY = 0; //middle of the sky
+var posZ = 100;
+
 var scaleBlock = 150; // 200 block diameter for the Sun
 var Sun = 1391900
-var distFactor = 100; //make the distances smaller
+var distFactor = 500; //make the distances smaller
 var scaleFactor = scaleBlock/Sun;
 
 var planets ={
@@ -68,7 +70,7 @@ command( 'Sun', function( parameters, player ) {
     var radius = scaleBlock/2;
 
     var cmLocation = Packages.net.canarymod.api.world.position.Location;
-    var loc =  new cmLocation( player.world, posX, posY, 0, 0, 0);
+    var loc =  new cmLocation( player.world, posX, posY, posZ, 0, 0);
 
   	teleport(player, loc);
 
@@ -90,7 +92,7 @@ command( 'planet', function( parameters, player ) {
 	  var block = planets[planet][2];
 
 	  var cmLocation = Packages.net.canarymod.api.world.position.Location;
-	  var loc =  new cmLocation( player.world, posX, posY + scaleBlock/2, 0, 0, 0);
+	  var loc =  new cmLocation( player.world, posX, posY + scaleBlock/2, posZ, 0, 0);
 
 	  teleport(player, loc);
 
@@ -99,9 +101,33 @@ command( 'planet', function( parameters, player ) {
 	  echo(player, 'Creating ' + planet);
 
 	}else{
-	  echo(player,'ERROR valid planets:\nMercury, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto');
+	  echo(player,'ERROR valid planets:\nMercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto');
 	}
 });
+
+
+command( 'atom', function( parameters, player ) {
+  	var type = parameters[0];
+    var atoms = {'Proton':[7,blocks.iron],
+				 'Neutron':[8,blocks.wool.orange],
+				 'Electron':[5,blocks.wool.blue]
+				}
+  
+  	if(type in atoms){
+
+
+	
+	  teleport(player, player.location);
+
+	  var d = new Drone(player);
+	  d.sphere0(atoms[type][1], atoms[type][0]);
+	  echo(player, 'Creating ' + type);
+
+	}else{
+	  echo(player,'ERROR valid planets:\n Proton, Neutron, Electron');
+	}
+});
+
 
 
 command( 'light', function( parameters, player ) {

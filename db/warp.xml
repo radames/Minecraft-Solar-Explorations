@@ -29,4 +29,49 @@
     <rotation>-261.75003</rotation>
     <world>solar</world>
   </entry>
+  <entry>
+    <dimension>NORMAL</dimension>
+    <groups />
+    <id>2</id>
+    <isPlayerHome>false</isPlayerHome>
+    <location>N/A</location>
+    <name>start</name>
+    <owner>null</owner>
+    <pitch>10.800014</pitch>
+    <posX>525.5</posX>
+    <posY>4.0</posY>
+    <posZ>5.5</posZ>
+    <rotation>-29.850012</rotation>
+    <world>solar</world>
+  </entry>
+  <entry>
+    <dimension>NORMAL</dimension>
+    <groups />
+    <id>4</id>
+    <isPlayerHome>false</isPlayerHome>
+    <location>N/A</location>
+    <name>solar</name>
+    <owner>null</owner>
+    <pitch>8.850029</pitch>
+    <posX>106.4286888734055</posX>
+    <posY>141.0</posY>
+    <posZ>104.23181403440299</posZ>
+    <rotation>269.39978</rotation>
+    <world>solar</world>
+  </entry>
+  <entry>
+    <dimension>NORMAL</dimension>
+    <groups />
+    <id>5</id>
+    <isPlayerHome>false</isPlayerHome>
+    <location>N/A</location>
+    <name>atom</name>
+    <owner>null</owner>
+    <pitch>5.3532352</pitch>
+    <posX>64.38997300651535</posX>
+    <posY>141.0</posY>
+    <posZ>96.01136338048839</posZ>
+    <rotation>-0.4453248</rotation>
+    <world>atom</world>
+  </entry>
 </warp>
