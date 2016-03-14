@@ -42,8 +42,8 @@ var Drone = require('drone'),
 	slash = require('slash');
 
 
-var posY = 200; //middle of the sky
-var scaleBlock = 20; // 200 block diameter for the Sun
+var posY = 0; //middle of the sky
+var scaleBlock = 150; // 200 block diameter for the Sun
 var Sun = 1391900
 var distFactor = 100; //make the distances smaller
 var scaleFactor = scaleBlock/Sun;
@@ -62,34 +62,42 @@ var planets ={
 
 command( 'Sun', function( parameters, player ) {
   
-    var posX = 0;
+  
+  
+    var posX = 0.0;
     var radius = scaleBlock/2;
 
     var cmLocation = Packages.net.canarymod.api.world.position.Location;
     var loc =  new cmLocation( player.world, posX, posY, 0, 0, 0);
 
-	teleport(player, loc);
-  
-    var d = new Drone(player);
-    d.sphere0(blocks.glowstone, radius);
+  	teleport(player, loc);
+
+  	if(parameters[0] == 'create'){
+	  
+    	var d = new Drone(player);
+    	d.sphere0(blocks.glowstone, radius);
+	  	echo(player, 'Creating the Sun');
+	}
 });
 
 command( 'planet', function( parameters, player ) {
   	var planet = parameters[0];
   	if(planet in planets){
 
-	  var posX = scaleFactor * planets['Mercury'][1]/ distFactor;
-	  var radius = scaleFactor * planets['Mercury'][0];
+	  var posX = scaleFactor * planets[planet][1]/ distFactor;
+	  var radius = scaleFactor * planets[planet][0];
 
-	  var block = planets['Mercury'][2];
+	  var block = planets[planet][2];
 
 	  var cmLocation = Packages.net.canarymod.api.world.position.Location;
-	  var loc =  new cmLocation( player.world, posX, posY, 0, 0, 0);
+	  var loc =  new cmLocation( player.world, posX, posY + scaleBlock/2, 0, 0, 0);
 
 	  teleport(player, loc);
 
 	  var d = new Drone(player);
 	  d.sphere0(block, radius);
+	  echo(player, 'Creating ' + planet);
+
 	}else{
 	  echo(player,'ERROR valid planets:\nMercury, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto');
 	}
