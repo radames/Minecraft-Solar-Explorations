@@ -14,6 +14,8 @@ Calculator to make your own Solar System model
 
 [Solar System Model Calculator](http://www.exploratorium.edu/ronh/solar_system/)
 
+[To Scale: The Solar System](https://vimeo.com/139407849)
+
 ### Workshop activity
 
 Use a local minecraft server to explore scale in Minecraft.
