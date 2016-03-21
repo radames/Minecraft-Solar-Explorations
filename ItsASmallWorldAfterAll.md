@@ -10,6 +10,10 @@ Then use this tool to think about relative sizes and scale
 
 [Scale Of The Universe Tool](http://www.htwins.net/scale2/)
 
+Calculator to make your own Solar System model
+
+[Solar System Model Calculator](http://www.exploratorium.edu/ronh/solar_system/)
+
 ### Workshop activity
 
 Use a local minecraft server to explore scale in Minecraft.
@@ -24,25 +28,39 @@ Get yourself to the solar platform using warp
 
 `/warp solar`
 
+#####Solar System Building
 
-## micro worlds
+`/jsp planet <Planet_Name>`
 
-
-Get yourself to the atom platform using warp
+```
+<Planet_Name>
+Earth
+Sun
+Moon
+Mercury
+Venus 
+Mars
+Saturn
+Jupiter
+Neptune
+Pluto
+```
 
 ### Atom World 
+
+Get yourself to the atom platform using warp
 `/warp atom`
 
 Use the [periodic table](http://education.jlab.org/itselemental/index.html) to make Hydrogen and Helium atoms.
 
 Make a nucleus
-`/jsp nucleus()`
+`/jsp atom nucleus`
 
 Make a proton
-`/jsp proton()`
+`/jsp atom proton`
 
 Make an electron
-`/jsp electron()`
+`/jsp atom electron()`
 
 
 

@@ -76,7 +76,7 @@ command( 'Sun', function( parameters, player ) {
 
   	if(parameters[0] == 'create'){
 	  
-    	var d = new Drone(player);
+    	var d = new Drone(player.location);
     	d.sphere0(blocks.glowstone, radius);
 	  	echo(player, 'Creating the Sun');
 	}
@@ -96,7 +96,7 @@ command( 'planet', function( parameters, player ) {
 
 	  teleport(player, loc);
 
-	  var d = new Drone(player);
+	  var d = new Drone(player.location);
 	  d.sphere0(block, radius);
 	  echo(player, 'Creating ' + planet);
 
@@ -119,7 +119,7 @@ command( 'atom', function( parameters, player ) {
 	
 	  teleport(player, player.location);
 
-	  var d = new Drone(player);
+	  var d = new Drone(player.location);
 	  d.sphere0(atoms[type][1], atoms[type][0]);
 	  echo(player, 'Creating ' + type);
 
