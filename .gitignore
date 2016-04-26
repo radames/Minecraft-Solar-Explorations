@@ -2,3 +2,6 @@ logs/*
 worlds/stats/*
 crash-reports/*
 worlds/players/*
+.DS_Store
+.Trashes
+tmp/
