@@ -3,15 +3,15 @@
 
 A simple minecraft plugin. Using Modules.
 
-### Usage: 
+### Usage:
 
 At the in-game prompt type ...
-  
+
     /jsp hello-module
 
-... and a message `Hello {player-name}` will appear (where {player-name} is 
+... and a message `Hello {player-name}` will appear (where {player-name} is
 replaced by your own name).
-  
+
 This example demonstrates the use of modules. In
 example-1-hello-module.js we created a new javascript module. In
 this example, we use that module...
@@ -24,7 +24,7 @@ this example, we use that module...
    directory.
 
  * We assign the loaded module to a variable (`greetings`) and then
-   use the module's `hello` method to display the message. 
+   use the module's `hello` method to display the message.
 
 Source Code...
 
@@ -51,21 +51,22 @@ var distFactor = 500; //make the distances smaller
 var scaleFactor = scaleBlock/Sun;
 
 var planets ={
-  'Mercury':[4866, 57950000, blocks.wool.gray],	
-  'Venus':[12106, 108110000, blocks.wool.white],
-  'Earth':[12742, 149570000, blocks.wool.blue],
-  'Mars':[6760, 227840000, blocks.wool.red],
-  'Jupiter':[142984,778140000, blocks.wool.yellow],
-  'Saturn':[116438, 1427000000, blocks.wool.lightgray],
-  'Uranus':[46940, 2870300000, blocks.wool.lightblue],
-  'Neptune':[45432, 4499900000, blocks.wool.purple],
-  'Pluto':[2274,5913000000, blocks.wool.pink]};
+  'mercury':[4866, 57950000, blocks.wool.gray],
+  'venus':[12106, 108110000, blocks.wool.white],
+  'earth':[12742, 149570000, blocks.wool.blue],
+  'mars':[6760, 227840000, blocks.wool.red],
+  'jupiter':[142984,778140000, blocks.wool.yellow],
+  'saturn':[116438, 1427000000, blocks.wool.lightgray],
+  'uranus':[46940, 2870300000, blocks.wool.lightblue],
+  'neptune':[45432, 4499900000, blocks.wool.purple],
+  'pluto':[2274,5913000000, blocks.wool.pink]
+};
 
 
 command( 'Sun', function( parameters, player ) {
-  
-  
-  
+
+
+
     var posX = 0.0;
     var radius = scaleBlock/2;
 
@@ -75,7 +76,7 @@ command( 'Sun', function( parameters, player ) {
   	teleport(player, loc);
 
   	if(parameters[0] == 'create'){
-	  
+
     	var d = new Drone(player.location);
     	d.sphere0(blocks.glowstone, radius);
 	  	echo(player, 'Creating the Sun');
@@ -83,7 +84,8 @@ command( 'Sun', function( parameters, player ) {
 });
 
 command( 'planet', function( parameters, player ) {
-  	var planet = parameters[0];
+  	var planet = String(parameters[0]);
+    planet = planet.replace(/ /g,'').toLowerCase(); //remove whitespaces make it lowercase
   	if(planet in planets){
 
 	  var posX = scaleFactor * planets[planet][1]/ distFactor;
@@ -101,22 +103,22 @@ command( 'planet', function( parameters, player ) {
 	  echo(player, 'Creating ' + planet);
 
 	}else{
-	  echo(player,'ERROR valid planets:\nMercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto');
+	  echo(player,'ERROR: the only valid planets:\nMercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto');
 	}
 });
 
 
 command( 'atom', function( parameters, player ) {
-  	var type = parameters[0];
-    var atoms = {'Proton':[7,blocks.iron],
-				 'Neutron':[8,blocks.wool.orange],
-				 'Electron':[5,blocks.wool.blue]
-				}
-  
+  	var type = String(parameters[0]);
+    type = type.replace(/ /g,'').toLowerCase(); //remove whitespaces make it lowercase
+    var atoms = {'proton':[7,blocks.iron],
+				 'neutron':[8,blocks.wool.orange],
+				 'electron':[5,blocks.wool.blue]
+				};
   	if(type in atoms){
 
 
-	
+
 	  teleport(player, player.location);
 
 	  var d = new Drone(player.location);
@@ -124,7 +126,7 @@ command( 'atom', function( parameters, player ) {
 	  echo(player, 'Creating ' + type);
 
 	}else{
-	  echo(player,'ERROR valid planets:\n Proton, Neutron, Electron');
+	  echo(player,'ERROR the only valid particles:\n Proton, Neutron, Electron');
 	}
 });
 
@@ -133,11 +135,11 @@ command( 'atom', function( parameters, player ) {
 command( 'light', function( parameters, player ) {
 	player.location.world.setTime(1000);
 
-  
+
 	slash([
 	  'time set 6000',
 	  'weather clear 1000000'
 	], player);
-  
+
 });
 
