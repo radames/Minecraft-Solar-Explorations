@@ -43,7 +43,7 @@ var Drone = require('drone'),
 
 
 var posY = 0; //middle of the sky
-var posZ = 100;
+var posZ = 175;
 
 var scaleBlock = 150; // 200 block diameter for the Sun
 var Sun = 1391900
@@ -89,7 +89,7 @@ command( 'planet', function( parameters, player ) {
   	if(planet in planets){
 
 	  var posX = scaleFactor * planets[planet][1]/ distFactor;
-	  var radius = scaleFactor * planets[planet][0];
+	  var radius = scaleFactor * planets[planet][0]/2;
 
 	  var block = planets[planet][2];
 
