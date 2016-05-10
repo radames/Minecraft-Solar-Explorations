@@ -53,4 +53,13 @@
     <subgroups />
     <uuid>491933a7-feea-4846-9773-4c79ce4d7a71</uuid>
   </entry>
+  <entry>
+    <group>visitors</group>
+    <id>6</id>
+    <isMuted>false</isMuted>
+    <name>radamar</name>
+    <prefix>null</prefix>
+    <subgroups />
+    <uuid>ec5f42a1-9270-4dd4-8211-14e1e3d3a5a1</uuid>
+  </entry>
 </player>

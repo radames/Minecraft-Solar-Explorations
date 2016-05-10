@@ -47,7 +47,7 @@ var posZ = 175;
 
 var scaleBlock = 150; // 200 block diameter for the Sun
 var Sun = 1391900
-var distFactor = 500; //make the distances smaller
+var distFactor = 200; //make the distances smaller
 var scaleFactor = scaleBlock/Sun;
 
 var planets ={
@@ -89,7 +89,7 @@ command( 'planet', function( parameters, player ) {
   	if(planet in planets){
 
 	  var posX = scaleFactor * planets[planet][1]/ distFactor;
-	  var radius = Math.floor(scaleFactor * planets[planet][0]/2);
+	  var radius = Math.round(scaleFactor * planets[planet][0]/2);
 
 	  var block = planets[planet][2];
 
