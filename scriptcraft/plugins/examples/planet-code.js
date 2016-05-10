@@ -100,6 +100,19 @@ command( 'planet', function( parameters, player ) {
 
 	  var d = new Drone(player.location);
 	  d.sphere0(block, radius);
+	  if(planet === 'saturn'){
+		d.up(5).back(4).left(4);
+		d.arc({blockType: blocks.iron, 
+		   meta: 0, 
+		   radius: Math.round(radius*2),
+		   strokeWidth: 2,
+		   quadrants: {topleft:true,topright:true,bottomleft:true,bottomright:true},
+		   orientation: 'horizontal', 
+		   stack: 1,
+		   fill: false
+		   } );
+		}
+	  
 	  echo(player, 'Creating ' + planet);
 
 	}else{
