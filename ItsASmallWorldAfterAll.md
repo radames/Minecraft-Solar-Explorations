@@ -2,27 +2,26 @@
 
 ### Exploring scale in Minecraft and in our heads
 
-Watch these videos to start to think about scale
+On a dry lakebed in Nevada, a group of friends build the first scale model of the solar system with complete planetary orbits: a true illustration of our place in the universe.
 
-[Powers of Ten](https://www.youtube.com/watch?v=0fKBhvDjuy0)
-
-Then use this tool to think about relative sizes and scale
-
-[Scale Of The Universe Tool](http://www.htwins.net/scale2/)
+[To Scale: The Solar System Scale Model Video](https://vimeo.com/139407849)
 
 Calculator to make your own Solar System model
 
 [Solar System Model Calculator](http://www.exploratorium.edu/ronh/solar_system/)
 
-[To Scale: The Solar System](https://vimeo.com/139407849)
+Illustrating video comparing the size of stars
+
+[Star Size Comparison Video](https://www.youtube.com/watch?v=HEheh1BH34Q)
+
+### Minecraft game play
+Use the keys `WASD` to control the movement of the character and the `Mouse` to controle the point of view / camera. Double tap the `space` key to start to fly, hold `space`to fly up and hold `shift` to fly down.
 
 ### Workshop activity
 
 Use a local minecraft server to explore scale in Minecraft.
 
- * Introduce the Powers Of Ten and Scale of The Universe Tools
- * Explore the Solar System and the atomic scale 
- * Explore the atom world and build atoms with the [Periodic Table](http://education.jlab.org/itselemental/index.html)
+ * Explore the Solar System
 
 ## Solar-Explorations
 
@@ -47,25 +46,3 @@ Jupiter
 Neptune
 Pluto
 ```
-
-### Atom World 
-
-Get yourself to the atom platform using warp
-`/warp atom`
-
-Use the [periodic table](http://education.jlab.org/itselemental/index.html) to make Hydrogen and Helium atoms.
-
-Make a nucleus
-`/jsp atom nucleus`
-
-Make a proton
-`/jsp atom proton`
-
-Make an electron
-`/jsp atom electron()`
-
-
-
-
-
- 
