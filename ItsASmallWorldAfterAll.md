@@ -1,4 +1,4 @@
-##It's A Small World After All
+## It's A Small World After All
 
 ### Exploring scale in Minecraft and in our heads
 
@@ -29,7 +29,7 @@ Get yourself to the solar platform using warp
 
 `/warp solar`
 
-#####Solar System Building
+##### Solar System Building
 
 `/jsp planet <Planet_Name>`
 
