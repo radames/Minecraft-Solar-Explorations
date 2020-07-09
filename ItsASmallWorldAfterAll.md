@@ -30,7 +30,7 @@ Get yourself to the solar platform using warp
 
 `/warp solar`
 
-#####Solar System Building
+##### Solar System Building
 
 `/jsp planet <Planet_Name>`
 
