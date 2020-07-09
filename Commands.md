@@ -33,7 +33,7 @@ Jupiter
 Neptune
 Pluto
 ```
-#####Atoms
+##### Atoms
 
 `/jsp atom Proton`
 `/jsp atom Neutron`
@@ -62,6 +62,6 @@ removes monsters
 `/defaultgamemode 1`
 makes it creative/fly mode
 
-##General 
+## General 
 
 Some of the generic Bukkit commands do work with CanaryMod but not all so ref the [main Gamepedia command syntax and reference](http://minecraft.gamepedia.com/Commands)
