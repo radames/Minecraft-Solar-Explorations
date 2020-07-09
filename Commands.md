@@ -14,9 +14,9 @@ List available warps
 Warp to a <warp_name>
 `/warp <warp_name>`
 
-####Building
+#### Building
 
-#####Solar System
+##### Solar System
 
 `/jsp planet <Planet_Name>`
 
