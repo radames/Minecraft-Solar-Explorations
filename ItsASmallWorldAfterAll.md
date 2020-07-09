@@ -1,4 +1,4 @@
-##It's A Small World After All
+## It's A Small World After All
 
 ### Exploring scale in Minecraft and in our heads
 
