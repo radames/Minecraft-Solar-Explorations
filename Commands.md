@@ -14,9 +14,9 @@ List available warps
 Warp to a <warp_name>
 `/warp <warp_name>`
 
-####Building
+#### Building
 
-#####Solar System
+##### Solar System
 
 `/jsp planet <Planet_Name>`
 
@@ -62,6 +62,6 @@ removes monsters
 `/defaultgamemode 1`
 makes it creative/fly mode
 
-##General 
+## General 
 
 Some of the generic Bukkit commands do work with CanaryMod but not all so ref the [main Gamepedia command syntax and reference](http://minecraft.gamepedia.com/Commands)
